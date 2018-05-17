@@ -1,0 +1,15 @@
+A parsed set of solo national winners setup for queries in Hive.
+
+The data was pulled off of Appendix K of the 2018 SCCA Solo Rules.  I don't know if there are nay
+licensing issues with using the data.  The document can be found on this page:
+
+https://www.scca.com/pages/solo-cars-and-rules
+https://www.scca.com/downloads/40392-2018-solo-rules-complete-reduced/download
+
+parser.rb was used to convert the raw text into csvs.  It is not very good.  The data is organized
+according to the Hive default partition system.  It gives extra columns for category and class that
+aren't in the actual data.
+
+Queries are written using some Presto specific features for managing arrays.  Queries were run by
+uploading the data to S3, creating an Athena table and copying the SQL into the Athena console.
+Note that the bucket and base path have been removed from the create table sql.

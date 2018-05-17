@@ -126,6 +126,7 @@ class Parser
       "Redondo",
       "Morgan",
       "West", # could be a problem
+      "W",
       "White", # could be a problem
       "Canal",
       "Beacon",
@@ -178,6 +179,9 @@ class Parser
       "Land",
       "Mill",
       "Commerce",
+      "Red",
+      "Atlantic",
+      "Melbourne"
     ]
   end
     
