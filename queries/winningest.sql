@@ -11,5 +11,5 @@ FROM
          count(name) AS wins
     FROM "korrelate_test"."national_results"
     GROUP BY  name)
-WHERE wins > 5
+WHERE wins > 3
 ORDER BY  wins DESC
