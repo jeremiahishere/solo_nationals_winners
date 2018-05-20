@@ -181,7 +181,8 @@ class Parser
       "Commerce",
       "Red",
       "Atlantic",
-      "Melbourne"
+      "Melbourne",
+      "Salt"
     ]
   end
     
